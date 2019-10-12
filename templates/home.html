@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block body %}
+<p>Upload an image and let the Keras Convolutional Neural Network not only
+   classify the orientation of your image but also fix it!
+   Give it a shot!
+</p>
+
+<p>
+  This is a pretty simple app.
+</p>
+
+<form action="/" method="POST" enctype="multipart/form-data">
+  <input type="file" name="image" id="image">
+  <input class="pure-button pure-button-primary" type="submit" value="Submit">
+</form>
+{% endblock %}

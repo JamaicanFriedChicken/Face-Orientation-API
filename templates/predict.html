@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="centered">
+    
+    <p>Image Given</p>
+    <img src="{{image_url}}" name="image_url" id="image_url">
+    <p>Looks like it's {{confidence|safe }}</p>
+    <p>The picture is rotated at {{ predictions|safe }} degrees</p>
+    <p>Fixed Image</p>
+    <img src="{{img}}" name="img" id="img">
+</div>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.10.min.js"></script>
+{% endblock %}
