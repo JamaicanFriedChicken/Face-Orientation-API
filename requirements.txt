@@ -1,5 +1,5 @@
 Keras==2.2.4
-numpy==1.15.4
+numpy==1.22.0
 imageio==2.5.0
 Flask==1.0.2
 tensorboard==1.12.2
